@@ -1,0 +1,116 @@
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: #FFFFFF;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #7a7a7a;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #5d5d5d;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  main {
+    background-color: #232323;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+    min-height: 100vh;
+  }
+  main section {
+    margin: 0;
+    padding: 1rem;
+  }
+  @media (max-width: 576px) {
+    main section {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: left;
+      width: 100vw;
+      z-index: 1;
+      background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5) 30%);
+    }
+  }
+  main h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 40px;
+    font-family: "Earth Orbiter";
+  }
+  main p {
+    margin: 2rem 0 0 0;
+    padding: 0;
+    font-size: 20px;
+    font-family: "Earth Orbiter";
+  }
+  main aside {
+    width: 373px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("img/Sign in.png") center center no-repeat;
+    background-size: cover;
+  }
+  main aside img {
+    width: 51px;
+    height: 60.26px;
+  }
+  @media (max-width: 576px) {
+    main aside img {
+      position: absolute;
+      top: 1rem;
+    }
+    main aside {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100vw;
+    }
+  }
+  main p.note {
+    position: absolute;
+    bottom: 1rem;
+    font-size: 15px;
+    font-family: "Raleway";
+  }
+  
+  .clip_2 {
+    margin: 2rem 0;
+    padding: 0;
+    display: flex;
+    position: relative;
+    background: #FFFFFF;
+    box-sizing: border-box;
+    overflow: hidden;
+    -webkit-clip-path: polygon(0 0, 92% 15%, 100% 100%, 15% 100%);
+            clip-path: polygon(0 0, 92% 15%, 100% 100%, 15% 100%);
+    width: 234px;
+    height: 65px;
+  }
+  .clip_2 input {
+    text-decoration: none;
+    color: #000000;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 11px;
+    background-color: #FFFFFF;
+    color: #2e2e2e;
+    border: none;
+    cursor: pointer;
+  }
