@@ -1,209 +1,214 @@
 ::-webkit-scrollbar {
-    width: 10px;
-  }
-  
-  ::-webkit-scrollbar-track {
-    background: #FFFFFF;
-  }
-  
-  ::-webkit-scrollbar-thumb {
-    background: #7a7a7a;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
-    background: #5d5d5d;
-  }
-  
-  body {
-    font-family: "Raleway";
-    margin: 0;
-    padding: 0;
-  }
-  
-  main {
-    background-color: #232323;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    min-height: 100vh;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-  }
-  main section {
-    margin: 0;
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #232323;;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #232323;
+}
+
+div.task {
+  font-family: "Raleway";
+  margin: 0;
+  padding: 0;
+}
+
+main.task {
+  background-color: #232323;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+main.task section.task {
+  margin: 0;
+  padding: 1rem;
+}
+@media (max-width: 576px) {
+  main.task section.task {
+    margin: 5rem 0 0 0;
     padding: 1rem;
-  }
-  @media (max-width: 576px) {
-    main section {
-      margin: 5rem 0 0 0;
-      padding: 1rem;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      text-align: left;
-      width: 100vw;
-      z-index: 1;
-      background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5) 30%);
-    }
-  }
-  main h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 40px;
-    font-family: "Earth Orbiter";
-  }
-  main h3 {
-    font-size: 30px;
-    font-family: "Earth Orbiter";
-    margin: 2rem 0 4rem 0;
-    padding: 0;
-  }
-  main p strong {
-    margin: 2rem 0 0 0;
-    padding: 0;
-    font-size: 23px;
-  }
-  main p{
-    margin-bottom: 1rem;
-  }
-  main aside {
-    min-width: 373px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
-    background: url("img/Sign in.png") center center no-repeat;
-    background-size: cover;
-    position: relative;
+    text-align: left;
+    width: 100vw;
+    z-index: 1;
+    background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.5) 30%);
+  }
+}
+main.task h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  font-family: "Earth Orbiter";
+}
+main.task h3 {
+  font-size: 30px;
+  font-family: "Earth Orbiter";
+  margin: 2rem 0 4rem 0;
+  padding: 0;
+}
+main.task p strong {
+  margin: 2rem 0 0 0;
+  padding: 0;
+  font-size: 23px;
+}
+main.task p{
+  margin-bottom: 1rem;
+}
+main.task aside {
+  min-width: 373px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: url("img/Sign in.png") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 1rem;
+}
+@media (max-width: 992px) {
+  main.task aside {
+    min-width: 200px;
+  }
+}
+@media (max-width: 576px) {
+  main.task aside {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100vw;
     margin: 0;
-    padding: 1rem;
-  }
-  @media (max-width: 992px) {
-    main aside {
-      min-width: 200px;
-    }
-  }
-  @media (max-width: 576px) {
-    main aside {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      width: 100vw;
-      margin: 0;
-      padding: 0;
-    }
-  }
-  main aside article {
-    position: absolute;
-    bottom: 1rem;
-    right: 1rem;
-    left: 1rem;
-  }
-  @media (max-width: 576px) {
-    main aside article {
-      display: none;
-    }
-  }
-  main aside h5 {
-    font-size: 20px;
-  }
-  main aside img {
-    width: 51px;
-    height: 60.26px;
-  }
-  @media (max-width: 576px) {
-    main aside img {
-      position: absolute;
-      top: 1rem;
-    }
-  }
-  main p.note {
-    font-size: 30px;
-    font-family: "Earth Orbiter";
-  }
-  @media (max-width: 576px) {
-    main p.note {
-      font-size: 20px;
-    }
-  }
-  .form-control {
-    margin: 2rem 0;
     padding: 0;
   }
-  .form-control div {
-    margin: 0 0 1rem 0;
-    padding: 0;
-    display: flex;
-    position: relative;
-    background: #FFFFFF;
-    box-sizing: border-box;
-    overflow: hidden;
-    -webkit-clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
-            clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
-    max-width: 638px;
-    height: 61px;
+}
+main.task aside article {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  left: 1rem;
+}
+@media (max-width: 576px) {
+  main.task aside article {
+    display: none;
   }
-  @media (max-width: 576px) {
-    .form-control div {
-      height: 42px;
-    }
-  }
-  .form-control div::before {
-    content: "";
+}
+main.task aside h5 {
+  font-size: 20px;
+}
+main aside img {
+  width: 51px;
+  height: 60.26px;
+}
+@media (max-width: 576px) {
+  main.task aside img {
     position: absolute;
-    top: 1px;
-    left: 2px;
-    width: 99%;
-    height: 97%;
-    background-color: #232323;
-    -webkit-clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
-            clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
-    z-index: -1;
+    top: 1rem;
   }
-  .form-control div input {
-    margin: 0;
-    padding: 0 0 0 2.25em;
-    border: none;
-    outline: none;
-    width: 100%;
+}
+main.task p.note {
+  font-size: 30px;
+  font-family: "Earth Orbiter";
+}
+@media (max-width: 576px) {
+  main.task p.note {
     font-size: 20px;
-    background: transparent;
-    color: #FFFFFF;
   }
-  
-  .clip_2 {
-    margin: 2rem 0;
-    padding: 0;
-    display: flex;
-    position: relative;
-    background: #FFFFFF;
-    box-sizing: border-box;
-    overflow: hidden;
-    -webkit-clip-path: polygon(0 0, 87% 0, 100% 100%, 9% 84%);
-            clip-path: polygon(0 0, 87% 0, 100% 100%, 9% 84%);
-    width: 234px;
-    height: 65px;
+}
+.task-form-control {
+  margin: 2rem 0;
+  padding: 0;
+}
+.task-form-control div {
+  margin: 0 0 1rem 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
+  max-width: 638px;
+  height: 61px;
+}
+@media (max-width: 576px) {
+  .task-form-control div {
+    height: 42px;
   }
-  @media (max-width: 576px) {
-    .clip_2 {
-      max-width: 100px;
-      max-height: 34.43px;
-    }
+}
+.task-form-control div::before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 99%;
+  height: 97%;
+  background-color: #232323;
+  -webkit-clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
+          clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
+  z-index: -1;
+}
+.task-form-control div input {
+  margin: 0;
+  padding: 0 0 0 3em;
+  border: none;
+  outline: none;
+  width: 100%;
+  font-size: 20px;
+  background: transparent;
+  color: #FFFFFF;
+}
+@media (max-width: 576px) {
+  .task-form-control div input {
+    padding: 0 0 0 2.25rem;
   }
-  .clip_2 input {
-    text-decoration: none;
-    color: #000000;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    font-size: 20px;
-    text-align: center;
-    background-color: #FFFFFF;
-    color: #2e2e2e;
-    border: none;
-    cursor: pointer;
+}
+
+.task-clip_2 {
+  margin: 2rem 0;
+  padding: 0;
+  display: flex;
+  position: relative;
+  background: #FFFFFF;
+  box-sizing: border-box;
+  overflow: hidden;
+  -webkit-clip-path: polygon(0 0, 87% 0, 100% 100%, 9% 84%);
+          clip-path: polygon(0 0, 87% 0, 100% 100%, 9% 84%);
+  width: 234px;
+  height: 65px;
+}
+@media (max-width: 576px) {
+  .task-clip_2 {
+    max-width: 100px;
+    max-height: 34.43px;
   }
+}
+.task-clip_2 input {
+  text-decoration: none;
+  color: #000000;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+  color: #2e2e2e;
+  border: none;
+  cursor: pointer;
+}
