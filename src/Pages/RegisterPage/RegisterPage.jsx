@@ -11,51 +11,51 @@ function RegisterPage(){
         setShip(type);
     }
     return (
-        <div>
-            <header>
+        <div className="register">
+            <header className="register">
                 <div></div>
                 <h1> Register </h1>
                 <p> In DS community we can hear you code 🚀</p>
             </header>
-            <main>
-                <form action="#" method="POST">
-                    <div class="form-control">
+            <main className="register">
+                <form action="#" method="POST" className="register">
+                    <div class="register-form-control">
                         <label for="name"> Full name </label>
                         <div>
                             <input type="text" name="name" id="name" placeholder="John Doe" />
                         </div>
                     </div>
-                    <div class="form-control">
+                    <div class="register-form-control">
                         <label for="email"> Email </label>
                         <div>
                             <input type="email" name="email" id="email" placeholder="xyz@srmist.edu.in" />
                         </div>
                     </div>
-                    <div class="form-control">
+                    <div class="register-form-control">
                         <label for="description"> A little about yourself </label>
                         <div class="Textarea">
                             <textarea name="description" id="description" rows="40" cols="30"></textarea>
                         </div>
                     </div>
-                    <div class="form-control">
+                    <div class="register-form-control">
                         <label for="github"> Github </label>
                         <div>
                             <input type="url" name="github" id="github" placeholder="https://github.com/..." />
                         </div>
                     </div>
-                    <div class="form-control">
+                    <div class="register-form-control">
                         <label for="linkedin"> LinkedIn </label>
                         <div>
                             <input type="url" name="linkedin" id="linkedin" placeholder="https://www.linkedin.com/..." />
                         </div>
                     </div>
-                    <div class="form-control">
+                    <div class="register-form-control">
                         <label for="password"> Password </label>
                         <div>
                             <input type="password" name="password" id="password" />
                         </div>
                     </div>
-                    <div class="form-control">
+                    <div class="register-form-control">
                         <label for="confirm-password"> Confirm Password </label>
                         <div>
                             <input type="password" name="password" id="confirm-password" />
@@ -68,15 +68,15 @@ function RegisterPage(){
                             <img src={ship} alt="Ship" id="ship" />
                         </div>
                         <div class="choose-domain">
-                            <div class="form-control">
+                            <div class="register-form-control">
                                 <input type="radio" name="domain" id="technical" onFocus={()=>{changeShip("Tech///", technical)}}/>
                                 <label for="technical"> Tech </label>
                             </div>
-                            <div class="form-control">
+                            <div class="register-form-control">
                                 <input type="radio" name="domain" id="corporate" onFocus={()=>{changeShip("Corpo//", corporate)}}/> 
                                 <label for="corporate"> Corpo </label>
                             </div>
-                            <div class="form-control">
+                            <div class="register-form-control">
                                 <input type="radio" name="domain" id="creatives" onFocus={()=>{changeShip("Creatives/", creatives)}}/>
                                 <label for="creatives"> Creatives </label>
                             </div>
