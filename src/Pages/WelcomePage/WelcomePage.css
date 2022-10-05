@@ -1,3 +1,6 @@
+*{
+font-family: "Raleway", sans-serif;
+}
 div.welcome {
   margin: 0;
   padding: 0;
@@ -14,6 +17,10 @@ main.welcome {
 main.welcome section.welcome {
   margin: 0;
   padding: 1rem 0 0 4rem;
+}
+section.w3lc0m3{
+    width: 90%;
+    padding: 5% !important;
 }
 @media (max-width: 992px) {
   main.welcome section.welcome {
@@ -41,8 +48,8 @@ main.welcome h1 {
 main.welcome p {
   margin: 2rem 0 0 0;
   padding: 0;
-  font-size: 20px;
-  font-family: "Earth Orbiter";
+  font-size: 15px;
+font-family: "Raleway", sans-serif;
 }
 main.welcome aside {
   width: 373px;
@@ -73,7 +80,6 @@ main.welcome p.welcome-note {
   position: absolute;
   bottom: 1rem;
   font-size: 15px;
-  font-family: "Raleway";
 }
 
 .welcome-clip_2 {
@@ -86,8 +92,8 @@ main.welcome p.welcome-note {
   overflow: hidden;
   -webkit-clip-path: polygon(0 0, 92% 15%, 100% 100%, 15% 100%);
           clip-path: polygon(0 0, 92% 15%, 100% 100%, 15% 100%);
-  width: 234px;
-  height: 65px;
+  width: 225px;
+  height: 62px;
 }
 .welcome-clip_2 input {
   text-decoration: none;
@@ -95,7 +101,7 @@ main.welcome p.welcome-note {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   padding-top: 11px;
   background-color: #FFFFFF;

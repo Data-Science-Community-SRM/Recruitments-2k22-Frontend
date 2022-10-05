@@ -15,9 +15,11 @@
 }
 
 div.task {
-  font-family: "Raleway";
+font-family: "Raleway", sans-serif;
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 main.task {
@@ -31,6 +33,10 @@ main.task {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+section.task{
+    width: 90%;
+    padding: 5% !important;
 }
 main.task section.task {
   margin: 0;
@@ -57,7 +63,7 @@ main.task h1 {
   font-family: "Earth Orbiter";
 }
 main.task h3 {
-  font-size: 30px;
+  font-size: 20px;
   font-family: "Earth Orbiter";
   margin: 2rem 0 4rem 0;
   padding: 0;
@@ -65,9 +71,11 @@ main.task h3 {
 main.task p strong {
   margin: 2rem 0 0 0;
   padding: 0;
-  font-size: 23px;
+  font-size: 15px;
+  font-weight: bold;
 }
 main.task p{
+    font-size: 15px;
   margin-bottom: 1rem;
 }
 main.task aside {
@@ -144,8 +152,8 @@ main.task p.note {
   overflow: hidden;
   -webkit-clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
           clip-path: polygon(11% 12%, 100% 0, 90% 100%, 0% 100%);
-  max-width: 638px;
-  height: 61px;
+  max-width: 600px;
+  height: 60px;
 }
 @media (max-width: 576px) {
   .task-form-control div {
@@ -166,11 +174,11 @@ main.task p.note {
 }
 .task-form-control div input {
   margin: 0;
-  padding: 0 0 0 3em;
+  padding: 0 0 0 4.5em;
   border: none;
   outline: none;
   width: 100%;
-  font-size: 20px;
+  font-size: 15px;
   background: transparent;
   color: #FFFFFF;
 }
@@ -181,7 +189,7 @@ main.task p.note {
 }
 
 .task-clip_2 {
-  margin: 2rem 0;
+  margin: 5% 0;
   padding: 0;
   display: flex;
   position: relative;
@@ -190,8 +198,8 @@ main.task p.note {
   overflow: hidden;
   -webkit-clip-path: polygon(0 0, 87% 0, 100% 100%, 9% 84%);
           clip-path: polygon(0 0, 87% 0, 100% 100%, 9% 84%);
-  width: 234px;
-  height: 65px;
+  width: 220px;
+  height: 60px;
 }
 @media (max-width: 576px) {
   .task-clip_2 {
@@ -205,7 +213,7 @@ main.task p.note {
   position: absolute;
   width: 100%;
   height: 100%;
-  font-size: 20px;
+  font-size: 15px;
   text-align: center;
   background-color: #FFFFFF;
   color: #2e2e2e;
