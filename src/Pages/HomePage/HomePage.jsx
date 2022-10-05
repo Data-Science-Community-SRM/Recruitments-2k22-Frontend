@@ -34,30 +34,29 @@ const HomePage = () => {
         startTimer();
     });
     return (
-        <div>
-        <main>
-            <nav>
-                <img src={logo} alt="Data Science Logo" className="Logo" />
-                <div className="clip_1">
-                    <button onClick={()=>{setOpenModal(true)}}> Sign In </button>
-                </div>       
-            </nav>
-            <section className="landing">
-                <h1> Recruitments 2K22 </h1>
-                <Clock 
-                    days={days} 
-                    hours={hours} 
-                    minutes={minutes} 
-                    seconds={seconds}
-                />
-                <div className="clip_2">
-                    <a href="/register"> Register </a>
-                </div>
-            </section>
-            {openModal && <div id="modal_blur"></div>}
-        </main>
-        
-        {openModal && <Modal closeModal={setOpenModal} />}
+        <div className="home">
+            <main className="home">
+                <nav className="home">
+                    <img src={logo} alt="Data Science Logo" className="Logo" />
+                    <div className="clip_1">
+                        <button onClick={()=>{setOpenModal(true)}}> Sign In </button>
+                    </div>       
+                </nav>
+                <section className="landing">
+                    <h1> Recruitments 2K22 </h1>
+                    <Clock 
+                        days={days} 
+                        hours={hours} 
+                        minutes={minutes} 
+                        seconds={seconds}
+                    />
+                    <div className="home-clip_2">
+                        <a href="/register"> Register </a>
+                    </div>
+                </section>
+                {openModal && <div id="modal_blur"></div>}
+            </main>
+            {openModal && <Modal closeModal={setOpenModal} />}
         </div>
     );
 };

@@ -33,9 +33,9 @@ function Clock({days, hours, minutes, seconds}){
     );
 };
 Clock.defaultProps={
-    days: 10,
-    hours: 10,
-    minutes: 10,
-    seconds: 10,
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0,
 }
 export default Clock;
